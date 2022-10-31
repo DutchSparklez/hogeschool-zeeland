@@ -8,38 +8,28 @@ width(5);
 
 // Square
 color(255, 0, 0);
-forward(250);
-right(90);
-forward(250);
-right(90);
-forward(250);
-right(90);
-forward(250);
-right(90);
+for (let i = 0; i < 4; i++) {
+  forward(250);
+  right(90);
+}
 
 // Triangle
 color(0, 255, 0);
 left(30);
-forward(100);
-left(120);
-forward(100);
-left(120);
+for (let i = 0; i < 2; i++) {
+  forward(100);
+  left(120);
+}
 forward(100);
 
 // Hexagon
 color(0, 0, 255);
 forward(75);
 right(60);
-forward(150);
-right(60);
-forward(150);
-right(60);
-forward(150);
-right(60);
-forward(150);
-right(60);
-forward(150);
-right(60);
+for (let i = 0; i < 5; i++) {
+  forward(150);
+  right(60);
+}
 forward(75);
 
 // My first letter
@@ -59,4 +49,3 @@ left(90);
 forward(50);
 left(90);
 forward(125);
-
