@@ -64,9 +64,27 @@ Operator    | Meaning                   |
 <=          | Smaller than or equal     |
 \>=         | Greater than or equal     |
 
+## The Web API
+
+Every browser supports a set of features that can be accessed using JavaScript. These features are called the Web API (Application Programming Interface). The simplest way to use the Web API is by using a script-tag inside HTML, this is called *inline scripting*. We can also reference a JavaScript file inside the HTML tag. This seperates the visuals of the website from the logic and is considered good practice. The script-tag uses the source (`src`) attribute for that.
+
+```html
+<!-- Inline scripting -->
+<script>
+    const message = 'Hello JavaScript!'
+    document.write(message);
+</script>
+
+<!-- External scripting -->
+<script src="app.js"></script>
+```
+
+The `document`, `window` and `console` variables are special in regards to the Web API. They refer to instances of objects containing many function, including `log()` and `write()` shown earlier. `window.prompt()` is a new function, one that prompt the user for a value, which can be used in JavaScript for processing.
+
 ## Important Functions
 
 function                | result                            |
 ------------------------|-----------------------------------|
-document.write()        | Write something to HTML document  |
 console.log()           | Write something to the console    |
+document.write()        | Write something to HTML document  |
+windows.prompt()        | Ask the user for input via popup  |
