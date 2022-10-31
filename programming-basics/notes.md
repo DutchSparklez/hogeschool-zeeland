@@ -31,6 +31,26 @@ As seen in the last three rows of the table: most operations have three parts: a
 document.write(9 / 3);
 ```
 
+## Variables
+
+Computers use memory to store data. Variables are containers for this data. Veriables can be created, read and updated whenever you feel like it. A variable is defined using the `let` keyword. There is also the `const` keyword for declaring constant values, these values cannot be updated.
+
+```js
+// This line is a comment, ignored dring execution
+// Creation of variables and constant
+let number = 5;
+const letter = 'w';
+
+// Reading of variables and constants
+console.log(number);
+console.log(letter);
+
+// Updating variables
+number = number * 2;
+```
+
+When used in expressions, the variable get replaced by the value it's holding. This happens before anything else.
+
 ## Proposition
 
 Propositions are expressions that evaluate to either true or false. There are special operators to help for this scenario. A true or false value is called a *boolean*. Propositions in code are therefore known as *boolean expressions*. In code they're used the same as other expressions.
