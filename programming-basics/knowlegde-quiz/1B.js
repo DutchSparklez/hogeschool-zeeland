@@ -1,5 +1,5 @@
 // Make fake variables for testing purposes
-dbr = 14;
+const dbr = 14;
 
 /* Question 4
 Declare a let variable called quote and assign it the following text string: 
