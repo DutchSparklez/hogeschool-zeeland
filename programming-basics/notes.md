@@ -49,7 +49,7 @@ console.log(letter);
 number = number * 2;
 ```
 
-When used in expressions, the variable get replaced by the value it's holding. This happens before anything else.
+When used in expressions, the variable get replaced by the value it's holding. This happens before anything else. JavaScript has an option for string templating. This replaces the single qoutes with back ticks. This allows for direct intergration with variables like: `${name}`.
 
 ## Proposition & Logic
 
