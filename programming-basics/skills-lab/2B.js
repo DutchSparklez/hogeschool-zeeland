@@ -12,7 +12,7 @@ Given the boolean variables a and b. These variables can hold either true or fal
 Create a variable called c and assign it true if a && b are both true otherwise false.
 
 But you are NOT allowed to use the && operator. Only use (nested) if, else-if and else statements. */
-// let c = false
+let c = false
 
 if (a) {
   if (b) {
@@ -25,7 +25,7 @@ Given the boolean variables a and b. These variables can hold either true or fal
 Create a variable called c and assign it true if a || b otherwise false.
 
 But you are NOT allowed to use the || operator. Only use (nested) if, else-if and else statements. */
-// let c = false;
+let c = false;
 
 if (a) {
   c = true;
@@ -40,7 +40,7 @@ Given the boolean variables a and b. These variables can hold either true or fal
 Create a variable called c and assign it true if a ^ b otherwise false.
 
 But you are NOT allowed to use the ^ operator. Only use (nested) if, else-if and else statements. */
-// let c = false;
+let c = false;
 
 if (a != b) {
   c = true;
