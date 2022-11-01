@@ -75,6 +75,8 @@ false   | false  | false  | false  | false  | true   |
 
 In order to use this power the ES gods have given us, we use something called an *if-statement*. Using this in your code allows the computer to decide whether or not to run the included statements. The block of code can be spotted fairly easily, it's surrounded by `{` and `}`. If the boolean expression evaluates to false, the code within the if-statement is simply skipped.
 
+When the conditions evaluates to false isn't the point where our options stop. We can actually write code for these situation. The `else if` is another codition that will be checked if the original `if` statement fails. The `else` is the place were the code goes if all other conditions fail. You can add as many `else if` statements as you want before defining the `else` statement.
+
 ```js
 let a = 20;
 
@@ -82,6 +84,12 @@ let a = 20;
 if (a < 10) {
     // Everything in here get's executed if the boolean expression evaluates to true
     a = a + 10;
+} else if (a > 20) {
+    // This condition is checked if the first one fails
+    a = a - 10;
+} else {
+    // This executes when all other conditions fail
+    a = a * 2;
 }
 
 a = a - 1;
