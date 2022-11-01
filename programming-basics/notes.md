@@ -51,7 +51,7 @@ number = number * 2;
 
 When used in expressions, the variable get replaced by the value it's holding. This happens before anything else.
 
-## Proposition
+## Proposition & Logic
 
 Propositions are expressions that evaluate to either true or false. There are special operators to help for this scenario. A true or false value is called a *boolean*. Propositions in code are therefore known as *boolean expressions*. In code they're used the same as other expressions.
 
@@ -63,6 +63,29 @@ Operator    | Meaning                   |
 \>          | Greater than              |
 <=          | Smaller than or equal     |
 \>=         | Greater than or equal     |
+
+Boolean expressions can be combined using logic operators. This allows us to create more complex condition for the application to meet. Available options are `&&` (AND), `||` (OR) & `^` (XOR). Boolean expression can be represented in truth tables, in which we specify all options for expressions and the result.
+
+A       | B      | A\|\|B | A&&B   | A^B    | !A     |
+--------|--------|--------|--------|--------|--------|
+true    | true   | true   | true   | false  | false  |
+true    | false  | true   | false  | true   | false  |
+false   | true   | true   | false  | true   | true   |
+false   | false  | false  | false  | false  | true   |
+
+In order to use this power the ES gods have given us, we use something called an *if-statement*. Using this in your code allows the computer to decide whether or not to run the included statements. The block of code can be spotted fairly easily, it's surrounded by `{` and `}`. If the boolean expression evaluates to false, the code within the if-statement is simply skipped.
+
+```js
+let a = 20;
+
+// Here we check a specific condition
+if (a < 10) {
+    // Everything in here get's executed if the boolean expression evaluates to true
+    a = a + 10;
+}
+
+a = a - 1;
+```
 
 ## The Web API
 
