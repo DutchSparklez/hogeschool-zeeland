@@ -51,6 +51,16 @@ number = number * 2;
 
 When used in expressions, the variable get replaced by the value it's holding. This happens before anything else. JavaScript has an option for string templating. This replaces the single qoutes with back ticks. This allows for direct intergration with variables like: `${name}`.
 
+A variable can also point to a collection of values, known as an *array*. A string for example, can be seen as a collection of characters. Each item in an array has it's own index, starting at 0. An array is created by assigning values between `[ ]`, seperated by commas. An array is considered an object and has some important properties and functions.
+
+```js
+let productList = ['Tooth brush', ' Crips', ' Deodorant', 'Tomato'];    // Create
+console.log(productList[2]);                                            // Read
+productList[1] = 'Chips';                                               // Update
+productList.splice(2, 1);                                               // Delete
+productList.push('Chicken');                                            // Add
+```
+
 ## Proposition & Logic
 
 Propositions are expressions that evaluate to either true or false. There are special operators to help for this scenario. A true or false value is called a *boolean*. Propositions in code are therefore known as *boolean expressions*. In code they're used the same as other expressions.
@@ -101,8 +111,9 @@ After being able to make descisions within our code, now we want to repeat certa
 
 ```js
 // For loop
-for (let i = 0; i < 10; i++>) {
-    console.log(i);
+numbers = [2, 4, 6, 8];
+for (let i = 0; i < numbers.length; i++>) {
+    console.log(numbers[i]);
 }
 
 // While loop
@@ -152,8 +163,11 @@ summary.innerHTML = 'A summary of the image';
 
 function                    | result                            |
 ----------------------------|-----------------------------------|
+array.pop()                 | Get and remove item from an array |
+array.push()                | Add element to array              |
+array.slice()               | Split the array up (or remove)    |
 console.log()               | Write something to the console    |
-document.getElementById()   | Retrieve element using an ID
+document.getElementById()   | Retrieve element using an ID      |
 document.querySelector()    | Retrieve element with selector    |
 document.write()            | Write something to HTML document  |
 windows.prompt()            | Ask the user for input via popup  |
