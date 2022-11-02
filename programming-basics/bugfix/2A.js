@@ -18,7 +18,6 @@ document.write('Your loan request has been approved');}
 if (result == 'rejected') {
                              document.write('Your loan request is rejected');} 
 ----------------------------------------------------------------------------------------*/
-
 const age = 53;
 const monthlySalary = 3500;
 const jobStatus = 'fixed-contract';
