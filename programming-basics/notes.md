@@ -95,6 +95,30 @@ if (a < 10) {
 a = a - 1;
 ```
 
+## Loops
+
+After being able to make descisions within our code, now we want to repeat certain actions. There are three different kind of *loops* that we can use while writing our applications: the `for`-loop, the `while`-loop and the `do-while`-loop. For loops are great at iterating collections or series, while is used to check a condition before executing code & a do-while loop runs the code once and checks for a condition afterwards.
+
+```js
+// For loop
+for (let i = 0; i < 10; i++>) {
+    console.log(i);
+}
+
+// While loop
+let number = 0;
+while (number < 10) {
+    console.log(number);
+    number += 1;
+}
+
+// Do-while loop
+do {
+    number -= 1;
+    console.log(number);
+} while (number > 0)
+```
+
 ## The Web API
 
 Every browser supports a set of features that can be accessed using JavaScript. These features are called the Web API (Application Programming Interface). The simplest way to use the Web API is by using a script-tag inside HTML, this is called *inline scripting*. We can also reference a JavaScript file inside the HTML tag. This seperates the visuals of the website from the logic and is considered good practice. The script-tag uses the source (`src`) attribute for that.
