@@ -102,7 +102,7 @@ Every browser supports a set of features that can be accessed using JavaScript. 
 ```html
 <!-- Inline scripting -->
 <script>
-    const message = 'Hello JavaScript!'
+    const message = 'Hello JavaScript!';
     document.write(message);
 </script>
 
@@ -110,12 +110,26 @@ Every browser supports a set of features that can be accessed using JavaScript. 
 <script src="app.js"></script>
 ```
 
-The `document`, `window` and `console` variables are special in regards to the Web API. They refer to instances of objects containing many function, including `log()` and `write()` shown earlier. `window.prompt()` is a new function, one that prompt the user for a value, which can be used in JavaScript for processing.
+The `document`, `window` and `console` variables are special in regards to the Web API. They refer to instances of objects containing many function, including `log()` and `write()` shown earlier. `window.prompt()` is a new function, one that prompt the user for a value, which can be used in JavaScript for processing. This function is limited since it can only append to an existing HTML document, not change it.
+
+The *Document Object Model* (DOM) is a tree structure containing the elements from an HTML page. The Web API can manipulate the entire DOM using various functions. The first step is finding an element on the DOM, this is done using two function: `document.querySelector()` & `document.getElementById()`. The next step is to change their properties, for example: `innerHTML` and `className`.
+
+```js
+// Get elements
+const image = documnet.querySelector('.ul.active');
+const summary = document.getElementById('summary');
+
+// Manipulate elements
+image.className = 'thumbnail';
+summary.innerHTML = 'A summary of the image';
+```
 
 ## Important Functions
 
-function                | result                            |
-------------------------|-----------------------------------|
-console.log()           | Write something to the console    |
-document.write()        | Write something to HTML document  |
-windows.prompt()        | Ask the user for input via popup  |
+function                    | result                            |
+----------------------------|-----------------------------------|
+console.log()               | Write something to the console    |
+document.getElementById()   | Retrieve element using an ID
+document.querySelector()    | Retrieve element with selector    |
+document.write()            | Write something to HTML document  |
+windows.prompt()            | Ask the user for input via popup  |
