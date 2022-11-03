@@ -21,3 +21,20 @@ During the early 40's, relays were developed from lamp technology. In the late 5
 1965 Saw the rise of datacenters, with IBM using 2,5 MB tapes to store data. They were the first company to make money from renting out computing power. In 1980 saw the introduction of the commodore, 1990 the gameboy; the best chess player on the planet got defeated by a computer and the internet was invented by CERN.
 
 In 2007 WiFi and TB-HDD's were getting usable. The iPhone announced the start of the modern computing era. And in 2013 the Xbox One had more compute power than available on planet Earth in 2007. The next chapter in mankind's information age is artificial intelligence.
+
+## What's a computer
+
+Computers nowadays can be everything, from the desktops and laptop; to smartphones and tablets; all the way to your fridge. All of these have similar internal components. External components are considered input- or output devices. which can have lots of ways to connect.
+
+* CPU (Central Processing Unit) is the brains of the computer, speeds is measured in Hz. It's made up of independent processing units called *cores*. It contains cache which is the CPU's own piece of memory.
+* RAM (Random Access Memory) is the memory where your computer stores temporary data, also known as working memory. When the computer turns off ; the memory stored is gone. When it's full, virtual memory is used instead.
+* SSD (Solid State Drive) and HDD (Hard Disk Drive) are secondairy memory, used for the storage of files. There are several connectors: IDE, SATA, NVMe and mSATA. Other secondairy memory includes: floppies, usb-sticks and cd's.
+* GPU (Graphical Processing Unit) is a computational power house used to process graphics and recently data sets.
+* Motherboard, the place where everything comes together.
+
+The operating system is what links the software with the hardware. The included kernel is what does the real magic; whether it's the Windows NT kernel, the linux kernel, the BSD kernel or any other. They manage the resources. The operating system and the kernel together manage everything inside your computer.
+
+1. Processor Management: the scheduler gives every program their fair share of CPU power.
+2. Memory Management: what goes where and how much?
+3. Device Management: interacting with devices using drivers. Presenting interface (CLI/GUI) to do this.
+4. Security: Who can change what, what can accessed by which process.
