@@ -33,7 +33,7 @@ export default class Fruit {
    * @param elapsed the time in ms since the last screen
    */
   public update(elapsed: number) {
-    this.posY += elapsed * 0.5;
+    this.posY += elapsed * 0.5 + (0.002 * this.posY);
   }
 
   /**

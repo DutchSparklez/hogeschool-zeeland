@@ -46,12 +46,13 @@ export default class Player {
    */
   public isCollidingFruit(fruit: Fruit): boolean {
     // Create a variables that stores the center position of the fruit
-    const center = Math.floor(fruit.getWidth()) / 2;
+    const center = fruit.getPosX() + Math.floor(fruit.getWidth() / 2);
+    const middle = fruit.getPosY() + Math.floor(fruit.getHeight() / 2);
 
     // Check the X-axis
-    if (fruit.getPosX() + center > this.posX && this.getWidth() + this.posX > fruit.getPosX()) {
+    if (center > this.posX && this.getWidth() + this.posX > center) {
       // Check the Y-axis
-      if (fruit.getPosY() > this.posY && this.getHeight() + this.posY > fruit.getPosY()) {
+      if (middle > this.posY && this.getHeight() + this.posY > middle) {
         // We're colliding
         return true;
       }

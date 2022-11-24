@@ -41,7 +41,7 @@ export default class FruitDrop extends Game {
     this.spiders = [];
     this.keyListener = new KeyListener();
     this.score = 0;
-    this.timeLeft = 10_000;
+    this.timeLeft = 90_000;
     this.timeToNextItem = 250;
   }
 
