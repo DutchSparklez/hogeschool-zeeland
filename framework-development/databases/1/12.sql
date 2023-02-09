@@ -1,0 +1,2 @@
+DELETE FROM Crocs
+WHERE Age > 50;
