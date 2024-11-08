@@ -26,6 +26,13 @@ Through this assignment, the student will meet the following learning objectives
 - Lay the foundation for a personal webportfolio, which will be used throughout the program
 - Experience first hand how to do a poster presentation and gather feedback from experts
 
+There are several requirements the website needs to meet.
+Next to consistent code style and using a local hosting environment,
+the website needs to have the following structure.
+
+![The necessary structure for the website.](./images/website-structure.png)
+
+
 ## Practice Assignments
 
 The first assignment received is the **preperation assignment**.
@@ -35,3 +42,6 @@ The parts of the assignment are:
 - Read a web languages primer document.
 - Complete the Codecademy Cat Photo App HTML course.
 - Create a simple HTML profile page.
+
+The second assignment is an **html page with an error**.
+It is up to the student to make sure the heading of the page appears correctly.
