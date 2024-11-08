@@ -15,7 +15,7 @@ In addition, students will learn how to build a website.
 - Introduce yourself to teachers and classmates
 - Finetune your motivation and study attitude
 
-## The Assignment
+## The Course Assignment
 
 The students needs to decide how to present their motivation and themselves.
 They select and learn the skills needed to achieve this.
@@ -23,5 +23,15 @@ The assignment is individual and will be presented during a poster presentation.
 Through this assignment, the student will meet the following learning objectives:
 
 - Become aquainted with the ICT program and the ICT field
-- Lay the foundation for a personal webportfolio, which will be used throughout the program        
+- Lay the foundation for a personal webportfolio, which will be used throughout the program
 - Experience first hand how to do a poster presentation and gather feedback from experts
+
+## Practice Assignments
+
+The first assignment received is the **preperation assignment**.
+This assignment introduces the students to web development through HTML.
+The parts of the assignment are:
+
+- Read a web languages primer document.
+- Complete the Codecademy Cat Photo App HTML course.
+- Create a simple HTML profile page.
